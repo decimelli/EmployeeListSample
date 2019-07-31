@@ -1,0 +1,11 @@
+.table .thead-light th {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.jumbotron {
+    background-color: #17a2b8;
+    color: white;
+    border-radius: 0;
+    margin-top: 2%;
+}
