@@ -1,10 +1,10 @@
 var path = require('path');
 
 module.exports = {
-    entry: './src/main/js/app.js',
+    entry: './src/main/js/App.js',
     devtool: 'sourcemaps',
     cache: true,
-    mode: 'development',
+    mode: 'production',
     output: {
         path: __dirname,
         filename: './src/main/resources/static/build/bundle.js'
@@ -13,7 +13,7 @@ module.exports = {
         rules: [
             {
                 test: path.join(__dirname, '.'),
-                exclude: "/node_modules/",
+                exclude: "/(node_modules)/",
                 use: [{
                     loader: 'babel-loader',
                     options: {
