@@ -1,7 +1,10 @@
-package com.decimelli.dbman.model;
+package com.decimelli.dbman.model.employee;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Service
 public class EmployeeService {
@@ -21,4 +24,9 @@ public class EmployeeService {
         return employees.save(employee);
     }
 
+    public Set<String> getAllEmployeeCountries() {
+        Set<String> countries = new HashSet<>();
+        employees.findAll().forEach(e -> countries.add(e.getBirthCountry()));
+        return countries;
+    }
 }

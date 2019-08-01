@@ -1,4 +1,4 @@
-package com.decimelli.dbman.model;
+package com.decimelli.dbman.model.employee;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -23,7 +23,7 @@ public class Employee {
         this.firstname = firstname;
         this.lastname = lastname;
         this.jobname = jobname;
-        this.birthCountry = birthCountry;
+        setBirthCountry(birthCountry);
     }
 
     public Employee() {

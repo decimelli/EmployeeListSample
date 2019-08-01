@@ -1,3 +1,11 @@
+body {
+    background-image: url("images/background.jpg");
+}
+
+tr {
+    background-color: white;
+}
+
 .table .thead-light th {
     background-color: #17a2b8;
     color: white;

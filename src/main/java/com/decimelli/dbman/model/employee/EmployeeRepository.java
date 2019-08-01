@@ -1,4 +1,4 @@
-package com.decimelli.dbman.model;
+package com.decimelli.dbman.model.employee;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
