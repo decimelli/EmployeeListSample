@@ -13,6 +13,9 @@ export default class CountryList extends React.Component {
             </thead>
             <tbody>
             {this.props.countries.map(country => <Country name={country}/>)}
+            <tr className="fadeout">
+                <td/>
+            </tr>
             </tbody>
         </table>)
     }

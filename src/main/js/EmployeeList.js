@@ -17,6 +17,13 @@ export default class EmployeeList extends React.Component {
             </thead>
             <tbody>
             {this.props.employees.map(employee => <Employee key={employee._links.self.href} employee={employee}/>)}
+            <tr className="fadeout">
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
             </tbody>
         </table>)
     }
